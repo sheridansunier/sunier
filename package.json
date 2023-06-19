@@ -2,6 +2,7 @@
   "name": "@adobecom/college",
   "private": true,
   "version": "1.0.0",
+  "type": "module",
   "description": "Website foundation technology.",
   "scripts": {
     "test": "wtr \"./test/**/*.test.js\" --node-resolve --port=2000 --coverage",
