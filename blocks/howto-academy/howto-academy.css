@@ -1,0 +1,30 @@
+.howto-academy {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: min-content;
+  grid-template-areas:
+    "heading image"
+    "list list";
+  max-width: 700px;
+  padding: 80px 24px;
+  margin: 0 auto;
+}
+.howto-academy .how-to-heading {
+  grid-area: heading;
+}
+.howto-academy > ol {
+  grid-area: list;
+  list-style: none;
+}
+.howto-academy > ol > li {
+  counter-increment: step-counter;
+  border-top: 1px solid #DDDDDD;
+  padding: 20px 0px;
+  font-size: large;
+}
+.howto-academy > ol > li::before {
+  content: counter(step-counter);
+  margin: 20px;
+  font-weight: 500;
+  font-size: 36px;
+}
